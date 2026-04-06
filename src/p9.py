@@ -19,7 +19,7 @@ def node_path_existence(start, end):
     visited[start] = True
 
     while queue:
-        current_node = queue.pop() # Take first node in queue
+        current_node = queue.pop(0) # Take first node in queue
 
         # Stop if we reached the end
         if current_node == end:
