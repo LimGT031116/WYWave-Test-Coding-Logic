@@ -15,7 +15,7 @@ def list_intersection(list1, list2):
     # Find intersection
     result = []
     for item in list2:
-        if item in map_dict:
+        if item in map_dict and item not in result:
             result.append(item)
 
     return result
