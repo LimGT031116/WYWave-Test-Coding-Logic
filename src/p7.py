@@ -8,6 +8,10 @@
 
 def integer_sqrt(x):
     # Use binary search
+
+    if x == 0 or x == 1:
+        return x
+
     l, r = 1, x // 2
     while l <= r:
         m = (l + r) // 2
